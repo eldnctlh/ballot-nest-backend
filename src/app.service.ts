@@ -5,7 +5,7 @@ import * as TokenizedBallotJSON from './assets/TokenizedBallot.json';
 
 const CONTRACT_ADDRESS = '0x1a6B025ad0bA0005901813D32b7f8A421C905986';
 const TOKENIZED_BALLOT_CONTRACT_ADDRESS =
-  '0x5371f6292d7eD0127a889338A6BA5D3D11265dA7';
+  '0x0AAB4B203ef2B6e82922A55C69361BA7dA3C343f';
 
 export class ClaimPaymentDTO {
   id: string;
