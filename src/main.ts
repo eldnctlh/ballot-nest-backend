@@ -4,7 +4,15 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-
+  const corsOptions = {
+    origin: '*',
+    methods: 'GET,HEAD,POST,PUT',
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+    credentials: true,
+    allowedHeaders: 'Content-Type, Accept, Authorization',
+  };
+  app.enableCors(corsOptions);
   const config = new DocumentBuilder()
     .setTitle('Cats example')
     .setDescription('The cats API description')
